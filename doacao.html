@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doações</title>
+  </head>
+  <body>
+    <header>
+      <h1>Faça uma Doação</h1>
+    </header>
+
+    <main>
+      <p>Por favor, considere fazer uma doação para apoiar nossa causa.</p>
+
+      <form action="processar_doacao.php" method="POST">
+        <label for="valor">Valor da Doação:</label>
+        <input
+          type="text"
+          id="valor"
+          name="valor"
+          placeholder="Digite o valor em reais"
+          required
+        />
+
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Seu nome"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Seu email"
+          required
+        />
+
+        <button type="submit">Doar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Obrigado por apoiar nossa causa!</p>
+    </footer>
+  </body>
+</html>
